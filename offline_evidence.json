@@ -1,0 +1,31 @@
+{
+  "offlocker_golden_frames_passed": 8,
+  "mode": "offline classification only; no payload sent to any server",
+  "http_scope": "request policy only; addon header/response/upload handling tested separately",
+  "counts": {
+    "offlocker:allow": 336,
+    "offlocker:deny": 126,
+    "offlocker:needs_backend_ownership": 16,
+    "vault:deny": 35,
+    "vault:allow": 185,
+    "market:allow": 334,
+    "market:deny": 21,
+    "nether:allow": 59,
+    "nether:deny": 7,
+    "agro:allow": 69,
+    "agro:deny": 336
+  },
+  "modbus_packet_classification": {
+    "documents/normal_operation.pcap": {
+      "allow": 45
+    },
+    "documents/maintenance_operation.pcap": {
+      "allow": 24
+    },
+    "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap": {
+      "deny": 336,
+      "allow": 27598
+    }
+  },
+  "limits": "IPv4 TCP classic PCAP only; no sequence-wrap handling. NAT/interface copies may remain. Counts are not unique vulnerabilities."
+}

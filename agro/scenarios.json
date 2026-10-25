@@ -1,0 +1,2002 @@
+{
+  "capture": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap",
+  "selected_server_endpoint": "STAND_HOST:5005",
+  "reason_for_selection": "Exclude second NAT-side copy atDOCKER_NET:5005",
+  "observed_scenarios": 10,
+  "waves": 4,
+  "incident_categories": 6,
+  "phases_with_nonzero_counters": 40,
+  "cleanup_phases": 4,
+  "scenarios": [
+    {
+      "id": "AGP01",
+      "finding": "Переполнение через уставку уровня буфера",
+      "incident_category": "flood",
+      "counter_register": 70,
+      "captured_repetitions": 4,
+      "first_phase": {
+        "reset_frame": 15253,
+        "reset_time": 1792838197.554513,
+        "writes": [
+          {
+            "frame": 15253,
+            "write": {
+              "space": "coil",
+              "start": 78,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 15448,
+            "write": {
+              "space": "hr",
+              "start": 5,
+              "values": [
+                1200
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 15454,
+            "write": {
+              "space": "coil",
+              "start": 77,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          }
+        ],
+        "incidents": {
+          "70": {
+            "value": 1,
+            "request_frame": 16051,
+            "response_frame": 16056
+          }
+        },
+        "before": {
+          "0": 469,
+          "1": 766,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 398,
+          "6": 200,
+          "7": 339,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 3,
+          "13": 3,
+          "60": 0,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 0,
+          "91": 0
+        },
+        "after": {
+          "0": 445,
+          "1": 985,
+          "2": 1000,
+          "3": 30,
+          "4": 0,
+          "5": 338,
+          "6": 200,
+          "7": 180,
+          "8": 0,
+          "9": 1000,
+          "10": 0,
+          "11": 0,
+          "12": 123,
+          "13": 123,
+          "60": 1,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 1,
+          "91": 1
+        }
+      },
+      "repeat_counter_evidence": [
+        {
+          "value": 1,
+          "request_frame": 16051,
+          "response_frame": 16056
+        },
+        {
+          "value": 1,
+          "request_frame": 52798,
+          "response_frame": 52803
+        },
+        {
+          "value": 1,
+          "request_frame": 88998,
+          "response_frame": 89003
+        },
+        {
+          "value": 1,
+          "request_frame": 124786,
+          "response_frame": 124791
+        }
+      ],
+      "mitigation_status": "unresolved_process_envelope",
+      "live_prevention_verified": false
+    },
+    {
+      "id": "AGP02",
+      "finding": "Давление при закрытом выходе насоса",
+      "incident_category": "pipe_rupture",
+      "counter_register": 71,
+      "captured_repetitions": 4,
+      "first_phase": {
+        "reset_frame": 16183,
+        "reset_time": 1792838222.296319,
+        "writes": [
+          {
+            "frame": 16183,
+            "write": {
+              "space": "coil",
+              "start": 78,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 16375,
+            "write": {
+              "space": "hr",
+              "start": 9,
+              "values": [
+                2
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 16381,
+            "write": {
+              "space": "coil",
+              "start": 2,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 16387,
+            "write": {
+              "space": "coil",
+              "start": 0,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 16396,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                120
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 16405,
+            "write": {
+              "space": "coil",
+              "start": 77,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          }
+        ],
+        "incidents": {
+          "71": {
+            "value": 1,
+            "request_frame": 16732,
+            "response_frame": 16737
+          }
+        },
+        "before": {
+          "0": 469,
+          "1": 766,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 398,
+          "6": 200,
+          "7": 339,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 3,
+          "13": 3,
+          "60": 0,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 0,
+          "91": 0
+        },
+        "after": {
+          "0": 457,
+          "1": 1000,
+          "2": 600,
+          "3": 0,
+          "4": 0,
+          "5": 368,
+          "6": 200,
+          "7": 487,
+          "8": 150,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 65,
+          "13": 65,
+          "60": 2,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 2,
+          "91": 1
+        }
+      },
+      "repeat_counter_evidence": [
+        {
+          "value": 1,
+          "request_frame": 16732,
+          "response_frame": 16737
+        },
+        {
+          "value": 1,
+          "request_frame": 53479,
+          "response_frame": 53484
+        },
+        {
+          "value": 1,
+          "request_frame": 89679,
+          "response_frame": 89684
+        },
+        {
+          "value": 1,
+          "request_frame": 125467,
+          "response_frame": 125472
+        }
+      ],
+      "mitigation_status": "candidate_fresh_water_path_interlock",
+      "live_prevention_verified": false
+    },
+    {
+      "id": "AGP03",
+      "finding": "Избыточная концентрация удобрения",
+      "incident_category": "chemical_contamination",
+      "counter_register": 73,
+      "captured_repetitions": 4,
+      "first_phase": {
+        "reset_frame": 16864,
+        "reset_time": 1792838235.343534,
+        "writes": [
+          {
+            "frame": 16864,
+            "write": {
+              "space": "coil",
+              "start": 78,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 17056,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 17062,
+            "write": {
+              "space": "hr",
+              "start": 2,
+              "values": [
+                5000
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 17068,
+            "write": {
+              "space": "coil",
+              "start": 77,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          }
+        ],
+        "incidents": {
+          "73": {
+            "value": 1,
+            "request_frame": 17395,
+            "response_frame": 17400
+          }
+        },
+        "before": {
+          "0": 469,
+          "1": 766,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 398,
+          "6": 200,
+          "7": 339,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 3,
+          "13": 3,
+          "60": 0,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 0,
+          "91": 0
+        },
+        "after": {
+          "0": 457,
+          "1": 1000,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 4603,
+          "6": 200,
+          "7": 180,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 63,
+          "13": 63,
+          "60": 8,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 4,
+          "91": 1
+        }
+      },
+      "repeat_counter_evidence": [
+        {
+          "value": 1,
+          "request_frame": 17395,
+          "response_frame": 17400
+        },
+        {
+          "value": 1,
+          "request_frame": 54142,
+          "response_frame": 54147
+        },
+        {
+          "value": 1,
+          "request_frame": 90354,
+          "response_frame": 90359
+        },
+        {
+          "value": 1,
+          "request_frame": 126130,
+          "response_frame": 126135
+        }
+      ],
+      "mitigation_status": "unresolved_process_envelope",
+      "live_prevention_verified": false
+    },
+    {
+      "id": "AGP04",
+      "finding": "Перегрев при включённом нагревателе",
+      "incident_category": "cabinet_fire",
+      "counter_register": 75,
+      "captured_repetitions": 4,
+      "first_phase": {
+        "reset_frame": 17527,
+        "reset_time": 1792838247.992051,
+        "writes": [
+          {
+            "frame": 17527,
+            "write": {
+              "space": "coil",
+              "start": 78,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 17719,
+            "write": {
+              "space": "coil",
+              "start": 20,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 17725,
+            "write": {
+              "space": "coil",
+              "start": 0,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 17731,
+            "write": {
+              "space": "coil",
+              "start": 5,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 17737,
+            "write": {
+              "space": "hr",
+              "start": 4,
+              "values": [
+                1200
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 17743,
+            "write": {
+              "space": "coil",
+              "start": 77,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          }
+        ],
+        "incidents": {
+          "75": {
+            "value": 1,
+            "request_frame": 18565,
+            "response_frame": 18570
+          }
+        },
+        "before": {
+          "0": 469,
+          "1": 766,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 398,
+          "6": 200,
+          "7": 339,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 3,
+          "13": 3,
+          "60": 0,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 0,
+          "91": 0
+        },
+        "after": {
+          "0": 435,
+          "1": 985,
+          "2": 604,
+          "3": 26,
+          "4": 156,
+          "5": 314,
+          "6": 1200,
+          "7": 512,
+          "8": 171,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 173,
+          "13": 173,
+          "60": 32,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 6,
+          "91": 1
+        }
+      },
+      "repeat_counter_evidence": [
+        {
+          "value": 1,
+          "request_frame": 18565,
+          "response_frame": 18570
+        },
+        {
+          "value": 1,
+          "request_frame": 55312,
+          "response_frame": 55317
+        },
+        {
+          "value": 1,
+          "request_frame": 91524,
+          "response_frame": 91529
+        },
+        {
+          "value": 1,
+          "request_frame": 127300,
+          "response_frame": 127305
+        }
+      ],
+      "mitigation_status": "unresolved_process_envelope",
+      "live_prevention_verified": false
+    },
+    {
+      "id": "AGP05",
+      "finding": "Смешанная запись расписания и калибровки уровня",
+      "incident_category": "flood",
+      "counter_register": 70,
+      "captured_repetitions": 4,
+      "first_phase": {
+        "reset_frame": 18697,
+        "reset_time": 1792838282.806608,
+        "writes": [
+          {
+            "frame": 18697,
+            "write": {
+              "space": "coil",
+              "start": 78,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 18889,
+            "write": {
+              "space": "hr",
+              "start": 98,
+              "values": [
+                1,
+                2,
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 18895,
+            "write": {
+              "space": "coil",
+              "start": 77,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          }
+        ],
+        "incidents": {
+          "70": {
+            "value": 1,
+            "request_frame": 19492,
+            "response_frame": 19497
+          }
+        },
+        "before": {
+          "0": 469,
+          "1": 766,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 398,
+          "6": 200,
+          "7": 339,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 3,
+          "13": 3,
+          "60": 0,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 0,
+          "91": 0
+        },
+        "after": {
+          "0": 445,
+          "1": 985,
+          "2": 0,
+          "3": 30,
+          "4": 0,
+          "5": 338,
+          "6": 200,
+          "7": 180,
+          "8": 0,
+          "9": 1000,
+          "10": 0,
+          "11": 0,
+          "12": 123,
+          "13": 123,
+          "60": 1,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 1,
+          "91": 1
+        }
+      },
+      "repeat_counter_evidence": [
+        {
+          "value": 1,
+          "request_frame": 19492,
+          "response_frame": 19497
+        },
+        {
+          "value": 1,
+          "request_frame": 56239,
+          "response_frame": 56244
+        },
+        {
+          "value": 1,
+          "request_frame": 92451,
+          "response_frame": 92456
+        },
+        {
+          "value": 1,
+          "request_frame": 128227,
+          "response_frame": 128232
+        }
+      ],
+      "mitigation_status": "candidate_schedule_calibration_boundary",
+      "live_prevention_verified": false
+    },
+    {
+      "id": "AGP06",
+      "finding": "Тестовый сигнал давления при работающем насосе",
+      "incident_category": "pipe_rupture",
+      "counter_register": 71,
+      "captured_repetitions": 4,
+      "first_phase": {
+        "reset_frame": 19624,
+        "reset_time": 1792838307.532653,
+        "writes": [
+          {
+            "frame": 19624,
+            "write": {
+              "space": "coil",
+              "start": 78,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 19816,
+            "write": {
+              "space": "hr",
+              "start": 9,
+              "values": [
+                2
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 19822,
+            "write": {
+              "space": "coil",
+              "start": 2,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 19828,
+            "write": {
+              "space": "coil",
+              "start": 0,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 19834,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                50
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 19840,
+            "write": {
+              "space": "hr",
+              "start": 101,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 19846,
+            "write": {
+              "space": "coil",
+              "start": 77,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          }
+        ],
+        "incidents": {
+          "71": {
+            "value": 1,
+            "request_frame": 20263,
+            "response_frame": 20268
+          }
+        },
+        "before": {
+          "0": 469,
+          "1": 766,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 398,
+          "6": 200,
+          "7": 339,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 3,
+          "13": 3,
+          "60": 0,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 0,
+          "91": 0
+        },
+        "after": {
+          "0": 453,
+          "1": 1000,
+          "2": 600,
+          "3": 20,
+          "4": 0,
+          "5": 358,
+          "6": 200,
+          "7": 498,
+          "8": 150,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 83,
+          "13": 83,
+          "60": 2,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 2,
+          "91": 1
+        }
+      },
+      "repeat_counter_evidence": [
+        {
+          "value": 1,
+          "request_frame": 20263,
+          "response_frame": 20268
+        },
+        {
+          "value": 1,
+          "request_frame": 57010,
+          "response_frame": 57015
+        },
+        {
+          "value": 1,
+          "request_frame": 93222,
+          "response_frame": 93227
+        },
+        {
+          "value": 1,
+          "request_frame": 128998,
+          "response_frame": 129003
+        }
+      ],
+      "mitigation_status": "candidate_fresh_water_path_interlock_does_not_cover_all_sensor_abuse",
+      "live_prevention_verified": false
+    },
+    {
+      "id": "AGP07",
+      "finding": "Массовые повторные записи обычной уставки",
+      "incident_category": "control_degradation",
+      "counter_register": 74,
+      "captured_repetitions": 4,
+      "first_phase": {
+        "reset_frame": 20395,
+        "reset_time": 1792838324.216432,
+        "writes": [
+          {
+            "frame": 20395,
+            "write": {
+              "space": "coil",
+              "start": 78,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 20662,
+            "write": {
+              "space": "hr",
+              "start": 0,
+              "values": [
+                600
+              ]
+            },
+            "count": 2452
+          },
+          {
+            "frame": 35422,
+            "write": {
+              "space": "coil",
+              "start": 77,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          }
+        ],
+        "incidents": {
+          "74": {
+            "value": 1,
+            "request_frame": 35569,
+            "response_frame": 35574
+          }
+        },
+        "before": {
+          "0": 469,
+          "1": 766,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 398,
+          "6": 200,
+          "7": 339,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 3,
+          "13": 3,
+          "60": 0,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 0,
+          "91": 0
+        },
+        "after": {
+          "0": 468,
+          "1": 920,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 395,
+          "6": 200,
+          "7": 315,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 10,
+          "13": 10,
+          "60": 16,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 5,
+          "91": 1
+        }
+      },
+      "repeat_counter_evidence": [
+        {
+          "value": 1,
+          "request_frame": 35569,
+          "response_frame": 35574
+        },
+        {
+          "value": 1,
+          "request_frame": 72736,
+          "response_frame": 72741
+        },
+        {
+          "value": 1,
+          "request_frame": 108522,
+          "response_frame": 108527
+        },
+        {
+          "value": 1,
+          "request_frame": 143956,
+          "response_frame": 143961
+        }
+      ],
+      "mitigation_status": "unresolved_resource_control",
+      "live_prevention_verified": false
+    },
+    {
+      "id": "AGP08",
+      "finding": "Включение насоса с закрытым всасыванием",
+      "incident_category": "motor_fault",
+      "counter_register": 72,
+      "captured_repetitions": 4,
+      "first_phase": {
+        "reset_frame": 35701,
+        "reset_time": 1792838330.626191,
+        "writes": [
+          {
+            "frame": 35701,
+            "write": {
+              "space": "coil",
+              "start": 78,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 35893,
+            "write": {
+              "space": "coil",
+              "start": 1,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 35899,
+            "write": {
+              "space": "coil",
+              "start": 0,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 35905,
+            "write": {
+              "space": "coil",
+              "start": 77,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          }
+        ],
+        "incidents": {
+          "72": {
+            "value": 1,
+            "request_frame": 36142,
+            "response_frame": 36147
+          }
+        },
+        "before": {
+          "0": 469,
+          "1": 766,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 398,
+          "6": 200,
+          "7": 339,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 3,
+          "13": 3,
+          "60": 0,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 0,
+          "91": 0
+        },
+        "after": {
+          "0": 461,
+          "1": 1000,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 378,
+          "6": 200,
+          "7": 806,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 43,
+          "13": 43,
+          "60": 4,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 3,
+          "91": 1
+        }
+      },
+      "repeat_counter_evidence": [
+        {
+          "value": 1,
+          "request_frame": 36142,
+          "response_frame": 36147
+        },
+        {
+          "value": 1,
+          "request_frame": 73309,
+          "response_frame": 73314
+        },
+        {
+          "value": 1,
+          "request_frame": 109095,
+          "response_frame": 109100
+        },
+        {
+          "value": 1,
+          "request_frame": 144529,
+          "response_frame": 144534
+        }
+      ],
+      "mitigation_status": "candidate_fresh_water_path_interlock",
+      "live_prevention_verified": false
+    },
+    {
+      "id": "AGP09",
+      "finding": "Колебания уставки давления при закрытом выходе",
+      "incident_category": "pipe_rupture",
+      "counter_register": 71,
+      "captured_repetitions": 4,
+      "first_phase": {
+        "reset_frame": 36274,
+        "reset_time": 1792838339.249853,
+        "writes": [
+          {
+            "frame": 36274,
+            "write": {
+              "space": "coil",
+              "start": 78,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36466,
+            "write": {
+              "space": "hr",
+              "start": 9,
+              "values": [
+                2
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36472,
+            "write": {
+              "space": "coil",
+              "start": 2,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36478,
+            "write": {
+              "space": "coil",
+              "start": 0,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36484,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36493,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36502,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36511,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36520,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36529,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36538,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36547,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36556,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36565,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36574,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36583,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36592,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36601,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36610,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36619,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36628,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36637,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36646,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36655,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36664,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36673,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36682,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36691,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36700,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36709,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36718,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36727,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36736,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                20
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36745,
+            "write": {
+              "space": "hr",
+              "start": 3,
+              "values": [
+                55
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 36754,
+            "write": {
+              "space": "coil",
+              "start": 77,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          }
+        ],
+        "incidents": {
+          "71": {
+            "value": 1,
+            "request_frame": 36856,
+            "response_frame": 36861
+          }
+        },
+        "before": {
+          "0": 469,
+          "1": 766,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 398,
+          "6": 200,
+          "7": 339,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 3,
+          "13": 3,
+          "60": 0,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 0,
+          "91": 0
+        },
+        "after": {
+          "0": 461,
+          "1": 1000,
+          "2": 600,
+          "3": 0,
+          "4": 0,
+          "5": 378,
+          "6": 200,
+          "7": 462,
+          "8": 150,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 43,
+          "13": 43,
+          "60": 2,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 2,
+          "91": 1
+        }
+      },
+      "repeat_counter_evidence": [
+        {
+          "value": 1,
+          "request_frame": 36856,
+          "response_frame": 36861
+        },
+        {
+          "value": 1,
+          "request_frame": 74023,
+          "response_frame": 74028
+        },
+        {
+          "value": 1,
+          "request_frame": 109809,
+          "response_frame": 109814
+        },
+        {
+          "value": 1,
+          "request_frame": 145243,
+          "response_frame": 145248
+        }
+      ],
+      "mitigation_status": "candidate_fresh_water_path_interlock_does_not_cover_all_pressure_oscillation",
+      "live_prevention_verified": false
+    },
+    {
+      "id": "AGP10",
+      "finding": "Накопление дозы серией отдельных импульсов",
+      "incident_category": "chemical_contamination",
+      "counter_register": 73,
+      "captured_repetitions": 4,
+      "first_phase": {
+        "reset_frame": 36988,
+        "reset_time": 1792838347.90652,
+        "writes": [
+          {
+            "frame": 36988,
+            "write": {
+              "space": "coil",
+              "start": 78,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37180,
+            "write": {
+              "space": "coil",
+              "start": 42,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37186,
+            "write": {
+              "space": "hr",
+              "start": 6,
+              "values": [
+                500
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37192,
+            "write": {
+              "space": "hr",
+              "start": 2,
+              "values": [
+                500
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37201,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37210,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37219,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37228,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37237,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37246,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37255,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37264,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37273,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37282,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37291,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37300,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37309,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37318,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37327,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37336,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37345,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37354,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37363,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37372,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37381,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37390,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37399,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37408,
+            "write": {
+              "space": "coil",
+              "start": 4,
+              "values": [
+                0
+              ]
+            },
+            "count": 1
+          },
+          {
+            "frame": 37417,
+            "write": {
+              "space": "coil",
+              "start": 77,
+              "values": [
+                1
+              ]
+            },
+            "count": 1
+          }
+        ],
+        "incidents": {
+          "73": {
+            "value": 1,
+            "request_frame": 37519,
+            "response_frame": 37524
+          }
+        },
+        "before": {
+          "0": 469,
+          "1": 766,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 398,
+          "6": 200,
+          "7": 339,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 3,
+          "13": 3,
+          "60": 0,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 0,
+          "91": 0
+        },
+        "after": {
+          "0": 455,
+          "1": 1000,
+          "2": 600,
+          "3": 30,
+          "4": 0,
+          "5": 465,
+          "6": 200,
+          "7": 180,
+          "8": 0,
+          "9": 0,
+          "10": 0,
+          "11": 0,
+          "12": 75,
+          "13": 75,
+          "60": 8,
+          "61": 0,
+          "62": 0,
+          "63": 0,
+          "90": 4,
+          "91": 1
+        }
+      },
+      "repeat_counter_evidence": [
+        {
+          "value": 1,
+          "request_frame": 37519,
+          "response_frame": 37524
+        },
+        {
+          "value": 1,
+          "request_frame": 74686,
+          "response_frame": 74691
+        },
+        {
+          "value": 1,
+          "request_frame": 110472,
+          "response_frame": 110477
+        },
+        {
+          "value": 1,
+          "request_frame": 145906,
+          "response_frame": 145911
+        }
+      ],
+      "mitigation_status": "unresolved_cumulative_dose",
+      "live_prevention_verified": false
+    }
+  ],
+  "coil77_semantics": "Unknown; follows each scenario. Not documented or present in normal/maintenance traces. Blocking77 alone is not evidence of preventing plant incidents.",
+  "coil78_semantics": "Observed model reset with defaults and cleared incident registers, not independently a proved vulnerability.",
+  "limits": [
+    "Incident outcomes are simulator-reported, not real physical damage.",
+    "Temporal association and repeated outcomes support captured scenarios, not exact incident thresholds or ten independent root causes.",
+    "Captured scenarios have not been mapped to official checker case IDs.",
+    "No live protection or SLA result."
+  ]
+}

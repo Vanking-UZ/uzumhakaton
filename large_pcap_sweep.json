@@ -1,0 +1,4793 @@
+[
+  {
+    "capture": "logs/attack_logs_extractedSTAND_HOME/cap_1451.pcap",
+    "bytes": 995602432,
+    "sha256": "df4998c7218db4136825580a236b7e8c797110f64c9a977033f5eda51974291f",
+    "ipv4_tcp_frames_decoded": 3191007,
+    "destination_tcp_port_frames": {
+      "6003": 469,
+      "6005": 3,
+      "6001": 1434,
+      "6004": 367,
+      "6002": 3629,
+      "6006": 71,
+      "5001": 1450,
+      "5005": 1618869,
+      "5004": 2074,
+      "5002": 6559,
+      "5022": 121,
+      "5021": 127,
+      "389": 4905,
+      "5003": 802,
+      "88": 8034,
+      "445": 413,
+      "5006": 693
+    },
+    "http_route_observations": [
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/v3/api-docs",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/v3/api-docs",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/health",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "200",
+        "count": 11
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/accounts/1/statement/export",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/internal/directory",
+        "status": "200",
+        "count": 15
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/transfers/preview",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/actuator/health",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/actuator/health",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "404",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/profile/preferences",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/transfers",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/lab/reset",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/complete",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/health",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "404",
+        "count": 5
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/cart",
+        "status": "201",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1002/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1002",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1002/pay",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "200",
+        "count": 74
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/3",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/3",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/1",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/lab/outbox",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "200",
+        "count": 11
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/accounts/1/statement/export",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/internal/directory",
+        "status": "200",
+        "count": 15
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "201",
+        "count": 8
+      },
+      {
+        "port": 5003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "201",
+        "count": 8
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/articles/brewing-basics",
+        "status": "200",
+        "count": 8
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/articles/brewing-basics",
+        "status": "200",
+        "count": 8
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/profile/preferences",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/transfers/preview",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/config",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/config",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1001/receipt",
+        "status": "200",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/products/1/reviews",
+        "status": "201",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 272
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "200",
+        "count": 60
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/register",
+        "status": "201",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/wallet/topup/callback",
+        "status": "200",
+        "count": 94
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/invoices/download",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/products/1/reviews.html",
+        "status": "200",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/wallet",
+        "status": "200",
+        "count": 144
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/account/export",
+        "status": "200",
+        "count": 40
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 23
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/supplier/import",
+        "status": "200",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "200",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/users/101/profile",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/users/2/profile",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/102/payout",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/forgot",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/catalog/import",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "403",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/transfers",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/orders/1001/receipt",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/invoices/download",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/supplier/import",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/products/1/reviews",
+        "status": "201",
+        "count": 20
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/api/ctf/dir",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/api/ctf/dir",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/api/ctf/xss",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/api/ctf/xss",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/config.backup",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/health",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/config.backup",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/health",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/products/1/reviews.html",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/lab/reset",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/catalog/import",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/users/101/profile",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/users/2/profile",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/102/payout",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/wallet",
+        "status": "200",
+        "count": 30
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/register",
+        "status": "201",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "200",
+        "count": 30
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "403",
+        "count": 10
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "201",
+        "count": 6
+      },
+      {
+        "port": 5003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "201",
+        "count": 6
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/uploads/shell_d13c20d8.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/uploads/shell_d13c20d8.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/forgot",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/account/export",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/wallet/topup/callback",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/lab/outbox",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/complete",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 112
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 112
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "204",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/profile",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/users/3/avatar",
+        "status": "502",
+        "count": 2
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 112
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/uploads/shell_22887dff.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/uploads/shell_22887dff.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/static/app.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/static/app.css",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/static/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 5
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/static/app.js",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 12
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 3
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/css/styles.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/css/styles.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/js/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/js/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 3
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/1/storefront",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "403",
+        "count": 56
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 3
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/css/app.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/css/app.css",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "403",
+        "count": 24
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "403",
+        "count": 2
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "403",
+        "count": 12
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog",
+        "status": "401",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "403",
+        "count": 60
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "403",
+        "count": 5
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "403",
+        "count": 25
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/login",
+        "status": "200",
+        "count": 3
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/js/common.js",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/js/login.js",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/login",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/static/",
+        "status": "302",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/static/",
+        "status": "302",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1003/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1003",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1003/pay",
+        "status": "402",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1004/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1004",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1004/pay",
+        "status": "200",
+        "count": 2
+      }
+    ],
+    "limits": "No IPv6, fragments, TCP sequence wrap or pcapng. Capture gaps and truncated final records are not interpreted as absence of attacks; rows are observations, not proven vulnerabilities."
+  },
+  {
+    "capture": "logs/hackathon_logs/cap_1451.pcap",
+    "bytes": 559542272,
+    "sha256": "c0abaa13570080e76e7a6cb3ac1b9764c37f457213301808d6e8d772d7215b92",
+    "ipv4_tcp_frames_decoded": 5304391,
+    "destination_tcp_port_frames": {
+      "6003": 469,
+      "6005": 4,
+      "6001": 1434,
+      "6004": 373,
+      "6002": 3629,
+      "6006": 71,
+      "5001": 1716,
+      "5005": 2708580,
+      "5004": 2098,
+      "5002": 7249,
+      "5022": 123,
+      "5021": 129,
+      "389": 4907,
+      "5003": 1028,
+      "88": 8036,
+      "445": 415,
+      "5006": 911
+    },
+    "http_route_observations": [
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/v3/api-docs",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/v3/api-docs",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/health",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "200",
+        "count": 11
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/accounts/1/statement/export",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/internal/directory",
+        "status": "200",
+        "count": 15
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/transfers/preview",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/actuator/health",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/actuator/health",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "404",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/profile/preferences",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/transfers",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/lab/reset",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/complete",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/health",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "404",
+        "count": 5
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/cart",
+        "status": "201",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1002/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1002",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1002/pay",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "200",
+        "count": 74
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/3",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/3",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/1",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/lab/outbox",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "200",
+        "count": 11
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/accounts/1/statement/export",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/internal/directory",
+        "status": "200",
+        "count": 15
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "201",
+        "count": 8
+      },
+      {
+        "port": 5003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "201",
+        "count": 8
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/articles/brewing-basics",
+        "status": "200",
+        "count": 8
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/articles/brewing-basics",
+        "status": "200",
+        "count": 8
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/profile/preferences",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/transfers/preview",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/config",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/config",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1001/receipt",
+        "status": "200",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/products/1/reviews",
+        "status": "201",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 348
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "200",
+        "count": 60
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/register",
+        "status": "201",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/wallet/topup/callback",
+        "status": "200",
+        "count": 94
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/invoices/download",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/products/1/reviews.html",
+        "status": "200",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/wallet",
+        "status": "200",
+        "count": 144
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/account/export",
+        "status": "200",
+        "count": 40
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 23
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/supplier/import",
+        "status": "200",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "200",
+        "count": 40
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/users/101/profile",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/users/2/profile",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/102/payout",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/forgot",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/catalog/import",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "403",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/transfers",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/orders/1001/receipt",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/invoices/download",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/supplier/import",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/products/1/reviews",
+        "status": "201",
+        "count": 20
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/api/ctf/dir",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/api/ctf/dir",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/api/ctf/xss",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/api/ctf/xss",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/config.backup",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/health",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/config.backup",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/health",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/products/1/reviews.html",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/lab/reset",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/catalog/import",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/users/101/profile",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/users/2/profile",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/102/payout",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/wallet",
+        "status": "200",
+        "count": 30
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/register",
+        "status": "201",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "200",
+        "count": 30
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "403",
+        "count": 10
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "201",
+        "count": 6
+      },
+      {
+        "port": 5003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "201",
+        "count": 6
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/uploads/shell_d13c20d8.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/uploads/shell_d13c20d8.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/forgot",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/account/export",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/wallet/topup/callback",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/lab/outbox",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/complete",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 149
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 149
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "204",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/profile",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/users/3/avatar",
+        "status": "502",
+        "count": 2
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 150
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/uploads/shell_22887dff.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/uploads/shell_22887dff.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/static/app.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/static/app.css",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/static/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 5
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/static/app.js",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 12
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 3
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/css/styles.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/css/styles.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/js/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/js/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 3
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/1/storefront",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "403",
+        "count": 56
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 3
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/css/app.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/css/app.css",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "403",
+        "count": 24
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "403",
+        "count": 2
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "403",
+        "count": 12
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog",
+        "status": "401",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "403",
+        "count": 60
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "403",
+        "count": 5
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "403",
+        "count": 25
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/login",
+        "status": "200",
+        "count": 3
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/js/common.js",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/js/login.js",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/login",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/static/",
+        "status": "302",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/static/",
+        "status": "302",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1003/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1003",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1003/pay",
+        "status": "402",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1004/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1004",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1004/pay",
+        "status": "200",
+        "count": 2
+      }
+    ],
+    "limits": "No IPv6, fragments, TCP sequence wrap or pcapng. Capture gaps and truncated final records are not interpreted as absence of attacks; rows are observations, not proven vulnerabilities."
+  },
+  {
+    "capture": "hackathon_backup_1024/cap_1451.pcap",
+    "bytes": 2014601216,
+    "sha256": "025f9632c2171d29646c24a7531dbf120cb8f89cfd911adbd1e42e92cd5bf0b6",
+    "ipv4_tcp_frames_decoded": 19271367,
+    "destination_tcp_port_frames": {
+      "6003": 984,
+      "6005": 8,
+      "6001": 2222,
+      "6004": 1134,
+      "6002": 5408,
+      "6006": 127,
+      "5001": 3145,
+      "5005": 9893046,
+      "5004": 4930,
+      "5002": 11700,
+      "5022": 216,
+      "5021": 223,
+      "389": 9538,
+      "5003": 2076,
+      "88": 16059,
+      "445": 689,
+      "5006": 1862
+    },
+    "http_route_observations": [
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/v3/api-docs",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/v3/api-docs",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/health",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/accounts/1/statement/export",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/internal/directory",
+        "status": "200",
+        "count": 21
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/transfers/preview",
+        "status": "200",
+        "count": 28
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "200",
+        "count": 28
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/actuator/health",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/actuator/health",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "404",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/profile/preferences",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/transfers",
+        "status": "200",
+        "count": 28
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/lab/reset",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/complete",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/health",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "200",
+        "count": 28
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "404",
+        "count": 7
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/cart",
+        "status": "201",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1002/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1002",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1002/pay",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "200",
+        "count": 80
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/3",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/3",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/1",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/lab/outbox",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/accounts/1/statement/export",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/internal/directory",
+        "status": "200",
+        "count": 21
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "201",
+        "count": 14
+      },
+      {
+        "port": 5003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "201",
+        "count": 14
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/articles/brewing-basics",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/articles/brewing-basics",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/profile/preferences",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/transfers/preview",
+        "status": "200",
+        "count": 28
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/config",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/config",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1001/receipt",
+        "status": "200",
+        "count": 52
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/products/1/reviews",
+        "status": "201",
+        "count": 52
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 690
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "200",
+        "count": 78
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/register",
+        "status": "201",
+        "count": 52
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/wallet/topup/callback",
+        "status": "200",
+        "count": 100
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/invoices/download",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/products/1/reviews.html",
+        "status": "200",
+        "count": 52
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/wallet",
+        "status": "200",
+        "count": 162
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/account/export",
+        "status": "200",
+        "count": 52
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 34
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/supplier/import",
+        "status": "200",
+        "count": 52
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "200",
+        "count": 52
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/users/101/profile",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/users/2/profile",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/102/payout",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/forgot",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/catalog/import",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "403",
+        "count": 26
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/transfers",
+        "status": "200",
+        "count": 28
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/orders/1001/receipt",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "200",
+        "count": 16
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/invoices/download",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/supplier/import",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/products/1/reviews",
+        "status": "201",
+        "count": 26
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/api/ctf/dir",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/api/ctf/dir",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/api/ctf/xss",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/api/ctf/xss",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/config.backup",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/health",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/config.backup",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/health",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/products/1/reviews.html",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/lab/reset",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/catalog/import",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/users/101/profile",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/users/2/profile",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/102/payout",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/wallet",
+        "status": "200",
+        "count": 39
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/register",
+        "status": "201",
+        "count": 26
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "200",
+        "count": 39
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "403",
+        "count": 13
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "201",
+        "count": 9
+      },
+      {
+        "port": 5003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "201",
+        "count": 9
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/uploads/shell_d13c20d8.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/uploads/shell_d13c20d8.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/forgot",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/account/export",
+        "status": "200",
+        "count": 26
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/wallet/topup/callback",
+        "status": "200",
+        "count": 13
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/lab/outbox",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/complete",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 310
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 310
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "204",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/profile",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/users/3/avatar",
+        "status": "502",
+        "count": 2
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 310
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/uploads/shell_22887dff.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/uploads/shell_22887dff.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/static/app.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/static/app.css",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/static/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 5
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/static/app.js",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 12
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 8
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/css/styles.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/css/styles.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/js/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/js/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 8
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/1/storefront",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "403",
+        "count": 80
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 8
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/css/app.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/css/app.css",
+        "status": "200",
+        "count": 9
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 4
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "403",
+        "count": 48
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "403",
+        "count": 5
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "403",
+        "count": 30
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog",
+        "status": "401",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "403",
+        "count": 96
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "403",
+        "count": 8
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "403",
+        "count": 40
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/login",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/js/common.js",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/js/login.js",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/login",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/static/",
+        "status": "302",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/static/",
+        "status": "302",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1003/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1003",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1003/pay",
+        "status": "402",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1004/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1004",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1004/pay",
+        "status": "200",
+        "count": 2
+      }
+    ],
+    "limits": "No IPv6, fragments, TCP sequence wrap or pcapng. Capture gaps and truncated final records are not interpreted as absence of attacks; rows are observations, not proven vulnerabilities."
+  },
+  {
+    "capture": "hackathon_backup_1024/extracted/attack_logsSTAND_HOME/cap_1451.pcap",
+    "bytes": 995602432,
+    "sha256": "cba9b0e804f2b4d761c5df4347b1817a375994da76fd15f2afc72cae76a7feaa",
+    "ipv4_tcp_frames_decoded": 9475963,
+    "destination_tcp_port_frames": {
+      "6003": 642,
+      "6005": 5,
+      "6001": 1824,
+      "6004": 626,
+      "6002": 4805,
+      "6006": 91,
+      "5001": 2367,
+      "5005": 4850240,
+      "5004": 2860,
+      "5002": 9429,
+      "5022": 157,
+      "5021": 163,
+      "389": 7219,
+      "5003": 1485,
+      "88": 12048,
+      "445": 553,
+      "5006": 1330
+    },
+    "http_route_observations": [
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/v3/api-docs",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/v3/api-docs",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/health",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/accounts/1/statement/export",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/internal/directory",
+        "status": "200",
+        "count": 18
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/transfers/preview",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/actuator/health",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/actuator/health",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "404",
+        "count": 6
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/profile/preferences",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/transfers",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/lab/reset",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 5001,
+        "method": "POST",
+        "path": "/api/recovery/complete",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/health",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "404",
+        "count": 6
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/cart",
+        "status": "201",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1002/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1002",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1002/pay",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "200",
+        "count": 78
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/3",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/3",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/accounts/1",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/lab/outbox",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1",
+        "status": "200",
+        "count": 6
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/accounts/1/statement/export",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/internal/directory",
+        "status": "200",
+        "count": 18
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "201",
+        "count": 10
+      },
+      {
+        "port": 5003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "201",
+        "count": 10
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/articles/brewing-basics",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/articles/brewing-basics",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/profile/preferences",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/transfers/preview",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/config",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/config",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1001/receipt",
+        "status": "200",
+        "count": 48
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/products/1/reviews",
+        "status": "201",
+        "count": 48
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 502
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "200",
+        "count": 72
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/register",
+        "status": "201",
+        "count": 48
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/wallet/topup/callback",
+        "status": "200",
+        "count": 98
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/invoices/download",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/products/1/reviews.html",
+        "status": "200",
+        "count": 48
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/wallet",
+        "status": "200",
+        "count": 156
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/account/export",
+        "status": "200",
+        "count": 48
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 29
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/supplier/import",
+        "status": "200",
+        "count": 48
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "200",
+        "count": 48
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/users/101/profile",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/users/2/profile",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/102/payout",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/forgot",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/catalog/import",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "403",
+        "count": 24
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/transfers",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/orders/1001/receipt",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "200",
+        "count": 15
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/invoices/download",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/supplier/import",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/products/1/reviews",
+        "status": "201",
+        "count": 24
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/api/ctf/dir",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/api/ctf/dir",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/api/ctf/xss",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/api/ctf/xss",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/config.backup",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/health",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/config.backup",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/health",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/products/1/reviews.html",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/lab/reset",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/catalog/import",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/users/101/profile",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/users/2/profile",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/102/payout",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/wallet",
+        "status": "200",
+        "count": 36
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/register",
+        "status": "201",
+        "count": 24
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "200",
+        "count": 36
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "403",
+        "count": 12
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "201",
+        "count": 7
+      },
+      {
+        "port": 5003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "201",
+        "count": 7
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/uploads/shell_d13c20d8.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/uploads/shell_d13c20d8.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/forgot",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/account/export",
+        "status": "200",
+        "count": 24
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/wallet/topup/callback",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/lab/outbox",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/complete",
+        "status": "200",
+        "count": 12
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 220
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 220
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "204",
+        "count": 6
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/profile",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/users/3/avatar",
+        "status": "502",
+        "count": 2
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 221
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/uploads/shell_22887dff.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/uploads/shell_22887dff.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/static/app.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/static/app.css",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/static/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 5
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/static/app.js",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 12
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/css/styles.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/css/styles.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/js/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5003,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/js/app.js",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5006,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/sellers/1/storefront",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "403",
+        "count": 72
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/css/app.css",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/css/app.css",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/favicon.ico",
+        "status": "404",
+        "count": 2
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "403",
+        "count": 36
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "403",
+        "count": 3
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "403",
+        "count": 18
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/catalog",
+        "status": "401",
+        "count": 2
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "403",
+        "count": 84
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "403",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "403",
+        "count": 35
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/login",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/js/common.js",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/js/login.js",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/login",
+        "status": "200",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/static/",
+        "status": "302",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 5001,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "401",
+        "count": 1
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/static/",
+        "status": "302",
+        "count": 1
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1003/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1003",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1003/pay",
+        "status": "402",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1004/checkout",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 5002,
+        "method": "GET",
+        "path": "/api/orders/1004",
+        "status": "200",
+        "count": 4
+      },
+      {
+        "port": 5002,
+        "method": "POST",
+        "path": "/api/orders/1004/pay",
+        "status": "200",
+        "count": 2
+      }
+    ],
+    "limits": "No IPv6, fragments, TCP sequence wrap or pcapng. Capture gaps and truncated final records are not interpreted as absence of attacks; rows are observations, not proven vulnerabilities."
+  },
+  {
+    "capture": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap",
+    "bytes": 19810460,
+    "sha256": "f2efc6a5f3d37ac1da251d04e7e2696e745a6672171bafee6f39127b99e86b42",
+    "ipv4_tcp_frames_decoded": 146055,
+    "destination_tcp_port_frames": {
+      "6004": 853,
+      "5004": 507,
+      "6001": 1729,
+      "6002": 3108,
+      "6003": 702,
+      "6006": 50,
+      "5022": 139,
+      "5021": 140,
+      "88": 16027,
+      "389": 9055,
+      "445": 531,
+      "6005": 4,
+      "5005": 47592
+    },
+    "http_route_observations": [
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/v3/api-docs",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/actuator/health",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/health",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/request",
+        "status": "404",
+        "count": 5
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/config",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/login",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/orders/1001/receipt",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/3",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "200",
+        "count": 8
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "200",
+        "count": 3
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/invoices/download",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/accounts/1/statement/export",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/supplier/import",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/internal/directory",
+        "status": "200",
+        "count": 15
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/products/1/reviews",
+        "status": "201",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/profile/preferences",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/products/1/reviews.html",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/transfers/preview",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/transfers",
+        "status": "200",
+        "count": 20
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/catalog/import",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "201",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/users/101/profile",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/users/2/profile",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/articles/brewing-basics",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/102/payout",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/wallet",
+        "status": "200",
+        "count": 21
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/lab/reset",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/register",
+        "status": "201",
+        "count": 14
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/config.backup",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6003,
+        "method": "GET",
+        "path": "/health",
+        "status": "200",
+        "count": 5
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "200",
+        "count": 21
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/admin/panel",
+        "status": "403",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/auth/forgot",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/account/export",
+        "status": "200",
+        "count": 14
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/wallet/topup/callback",
+        "status": "200",
+        "count": 7
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "201",
+        "count": 6
+      },
+      {
+        "port": 6006,
+        "method": "GET",
+        "path": "/uploads/shell_22887dff.phtml",
+        "status": "200",
+        "count": 2
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/lab/outbox",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6001,
+        "method": "POST",
+        "path": "/api/recovery/complete",
+        "status": "200",
+        "count": 10
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/catalog/search",
+        "status": "403",
+        "count": 48
+      },
+      {
+        "port": 6001,
+        "method": "GET",
+        "path": "/api/accounts/1/transactions",
+        "status": "403",
+        "count": 48
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/articles/brewing-basics/comments",
+        "status": "403",
+        "count": 4
+      },
+      {
+        "port": 6003,
+        "method": "POST",
+        "path": "/api/upload",
+        "status": "403",
+        "count": 24
+      },
+      {
+        "port": 6002,
+        "method": "GET",
+        "path": "/api/sellers/3/storefront",
+        "status": "403",
+        "count": 48
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/media/convert",
+        "status": "403",
+        "count": 4
+      },
+      {
+        "port": 6002,
+        "method": "POST",
+        "path": "/api/users/2/avatar",
+        "status": "403",
+        "count": 20
+      }
+    ],
+    "limits": "No IPv6, fragments, TCP sequence wrap or pcapng. Capture gaps and truncated final records are not interpreted as absence of attacks; rows are observations, not proven vulnerabilities."
+  }
+]

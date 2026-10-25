@@ -1,0 +1,28 @@
+{
+  "host": "STAND_HOST",
+  "timeout": 5,
+  "slow_ms": 1500,
+  "ports": {},
+  "vault": {
+    "username": "",
+    "password": "",
+    "account_id": 1,
+    "lookup_name": "jdoe",
+    "history_query": "transfer",
+    "recipient_account": "",
+    "transfer_amount": "1.00"
+  },
+  "market": {
+    "search_query": "phone",
+    "seller_id": 3
+  },
+  "nether": {
+    "article": "brewing-basics"
+  },
+  "agro": {
+    "units": [
+      1
+    ]
+  },
+  "_note": "Credentials: private sla_config.json (not shared) or SLA_VAULT_USERNAME / SLA_VAULT_PASSWORD env vars. Verify account_id, recipient_account, seller_id and agro.units against the live stand before --full."
+}

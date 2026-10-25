@@ -1,0 +1,74 @@
+{
+  "strict_confirmed_scenario_minimum": 32,
+  "by_asset": {
+    "Vault": 8,
+    "Market": 8,
+    "Nether": 2,
+    "OffLocker": 4,
+    "AgroPlant": 10
+  },
+  "included_finding_ids": {
+    "Vault": [
+      "V01",
+      "V02",
+      "V03",
+      "V04",
+      "V06",
+      "V07",
+      "V08",
+      "V09"
+    ],
+    "Market": [
+      "M01",
+      "M02",
+      "M03",
+      "M04",
+      "M05",
+      "M06",
+      "M07",
+      "M08"
+    ],
+    "Nether": [
+      "N01",
+      "N02"
+    ],
+    "OffLocker": [
+      "O01",
+      "O02",
+      "O03",
+      "O04"
+    ],
+    "AgroPlant": [
+      "A02",
+      "A03",
+      "A04"
+    ]
+  },
+  "registry_entries": 50,
+  "other_entries_not_in_this_strict_count": 25,
+  "criterion": "Conservative subset with a directly recorded server-side result: unauthorized disclosure/access, changed business state, command/gadget execution, or an exploitable input with primary request/response evidence. Other registry entries are not automatically false: they include earlier-stage findings, blocked variants, partial evidence, infrastructure risks and hypotheses.",
+  "not_a_deduplicated_root_cause_total": true,
+  "not_a_count_of_new_or_fixed_vulnerabilities": true,
+  "not_a_mapping_to_52_checker_scenarios": true,
+  "SLA_acceptance": {
+    "target_percent": 100,
+    "meaning": "All legitimate client business operations remain functional through the defense; HTTP200/health alone is insufficient.",
+    "per_rule_gate": "Block the prohibited action before backend side effects and preserve the corresponding legitimate operation and its expected state changes.",
+    "false_positive_policy": "Do not activate a rule with a confirmed legitimate-flow regression. Roll back the external rule/upstream to the previous state.",
+    "actual_live_SLA_verified": false
+  },
+  "included_agro_scenario_ids": [
+    "AGP01",
+    "AGP02",
+    "AGP03",
+    "AGP04",
+    "AGP05",
+    "AGP06",
+    "AGP07",
+    "AGP08",
+    "AGP09",
+    "AGP10"
+  ],
+  "registry_entries_with_direct_result": 25,
+  "counting_note": "Agro10 observed attack sequences span three registry entries A02/A03/A04 and six simulator incident categories. Four repetitions are counted once. Unknown coils77/78 are not counted as an independent vulnerability. Previous22 subset extended after request/response and incident-timeline analysis."
+}

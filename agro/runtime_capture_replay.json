@@ -1,0 +1,647 @@
+{
+  "mode": "loopback fixture only; no traffic sent to the stand",
+  "documented_requests": 69,
+  "normal_trials": 8,
+  "requests_compared": 384,
+  "all_responses_byte_identical": true,
+  "trials": [
+    {
+      "capture": "normal_operation.pcap",
+      "initial_unknown_coil_bits": 0,
+      "requests_passed": 45,
+      "fresh_read_fixture_values": [
+        {
+          "function": 3,
+          "start": 10,
+          "value": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 0
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 0
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 0
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 0
+        }
+      ]
+    },
+    {
+      "capture": "normal_operation.pcap",
+      "initial_unknown_coil_bits": 1,
+      "requests_passed": 45,
+      "fresh_read_fixture_values": [
+        {
+          "function": 3,
+          "start": 10,
+          "value": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 1
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 1
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 1
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 1
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 1
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 1
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 1
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 1
+        }
+      ]
+    },
+    {
+      "capture": "normal_operation.pcap",
+      "initial_unknown_coil_bits": 2,
+      "requests_passed": 45,
+      "fresh_read_fixture_values": [
+        {
+          "function": 3,
+          "start": 10,
+          "value": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 2
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 2
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 2
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 2
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 2
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 2
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 2
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 2
+        }
+      ]
+    },
+    {
+      "capture": "normal_operation.pcap",
+      "initial_unknown_coil_bits": 3,
+      "requests_passed": 45,
+      "fresh_read_fixture_values": [
+        {
+          "function": 3,
+          "start": 10,
+          "value": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 3
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 3
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 3
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 3
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 3
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 3
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 3
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 3
+        }
+      ]
+    },
+    {
+      "capture": "normal_operation.pcap",
+      "initial_unknown_coil_bits": 4,
+      "requests_passed": 45,
+      "fresh_read_fixture_values": [
+        {
+          "function": 3,
+          "start": 10,
+          "value": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 4
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 4
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 4
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 4
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 4
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 4
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 4
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 4
+        }
+      ]
+    },
+    {
+      "capture": "normal_operation.pcap",
+      "initial_unknown_coil_bits": 5,
+      "requests_passed": 45,
+      "fresh_read_fixture_values": [
+        {
+          "function": 3,
+          "start": 10,
+          "value": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 5
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 5
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 5
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 5
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 5
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 5
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 5
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 5
+        }
+      ]
+    },
+    {
+      "capture": "normal_operation.pcap",
+      "initial_unknown_coil_bits": 6,
+      "requests_passed": 45,
+      "fresh_read_fixture_values": [
+        {
+          "function": 3,
+          "start": 10,
+          "value": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        }
+      ]
+    },
+    {
+      "capture": "normal_operation.pcap",
+      "initial_unknown_coil_bits": 7,
+      "requests_passed": 45,
+      "fresh_read_fixture_values": [
+        {
+          "function": 3,
+          "start": 10,
+          "value": 0
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 7
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 7
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 7
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 7
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 7
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 7
+        },
+        {
+          "function": 3,
+          "start": 6,
+          "value": 200
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 7
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 7
+        }
+      ]
+    },
+    {
+      "capture": "maintenance_operation.pcap",
+      "initial_unknown_coil_bits": 0,
+      "requests_passed": 24,
+      "fresh_read_fixture_values": [
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        },
+        {
+          "function": 1,
+          "start": 0,
+          "count": 6,
+          "bits": 6
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Captured replies are fixture responses, not execution of the application or simulator.",
+    "Extra fresh reads use the most recent captured read observation; write ACKs do not update fixture state.",
+    "The normal capture has no coil reads, so all eight prior coil 0..2 states are tried.",
+    "Historical observations do not establish actual values at the time of a newly inserted read.",
+    "This does not prove morning SLA, autonomous server behavior, or prevention of all incidents."
+  ]
+}

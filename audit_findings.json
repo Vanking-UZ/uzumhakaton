@@ -1,0 +1,502 @@
+[
+  {
+    "id": "V01",
+    "asset": "Vault",
+    "severity": "critical",
+    "finding": "Отрицательная сумма реально проведена через 6001",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1296/1300,1308/1319: amountMinor=-10000",
+    "status": "candidate_offline",
+    "external_mitigation": "web/policy.py: положительная конечная сумма, целое число минимальных денежных единиц",
+    "live_acceptance": "Положительный preview+confirm и реальные изменения обоих балансов; отрицательный/нулевой/субцентовый запрос не меняет состояние"
+  },
+  {
+    "id": "V02",
+    "asset": "Vault",
+    "severity": "high",
+    "finding": "Подмена суммы между preview и confirm",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1384/1388 and 1408/1412: preview 100, confirmed 5000",
+    "status": "candidate_offline",
+    "external_mitigation": "На confirm разрешён только confirmationId; никакие client-side overrides",
+    "live_acceptance": "Подтверждение обычного перевода; попытки подмены amount/source/recipient отклонены без списаний"
+  },
+  {
+    "id": "V03",
+    "asset": "Vault",
+    "severity": "critical",
+    "finding": "Jackson gadget выполнен через защищённый порт",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1211/1215: gadgetExecuted=true; normal DTO 1223/1237",
+    "status": "candidate_offline",
+    "external_mitigation": "Allowlist единственного наблюдаемого PreferencesDto и допустимых полей",
+    "live_acceptance": "Обычные настройки сохраняются; неизвестный @class/command не достигает сервера"
+  },
+  {
+    "id": "V04",
+    "asset": "Vault",
+    "severity": "high",
+    "finding": "Шаблон в заголовке выписки вычислен сервером",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1125/1129: harmless arithmetic expression rendered as 49",
+    "status": "candidate_offline",
+    "external_mitigation": "Профиль обычного текста для title и columns",
+    "live_acceptance": "Обычная выписка с нужными колонками создаётся; expression не вычисляется"
+  },
+  {
+    "id": "V05",
+    "asset": "Vault",
+    "severity": "high",
+    "finding": "LDAP-фильтр управляется пользовательским поиском",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap: GET /api/internal/directory, 200; presentation_agent_handoff/01_BRIEF/FACTS_AND_CLAIMS_REGISTER.md",
+    "status": "candidate_offline_requires_effect_check",
+    "external_mitigation": "Отклонять LDAP metacharacters в пользовательском запросе; не блокировать все LDAP-порты",
+    "live_acceptance": "Обычный поиск jdoe/имени работает; wildcard/filter injection не раскрывает расширенные данные"
+  },
+  {
+    "id": "V06",
+    "asset": "Vault",
+    "severity": "high",
+    "finding": "Доступ к чужому банковскому счёту",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1033/1038: /api/accounts/3 contains server flag marker",
+    "status": "unresolved_identity_binding",
+    "external_mitigation": "Внешняя авторизация через доверенный /api/me + /api/accounts и привязка accountId к серверной сессии",
+    "live_acceptance": "Свой счёт/история/выписка доступны; чужие accountId запрещены для customer; роли support/admin проверяются отдельно"
+  },
+  {
+    "id": "V07",
+    "asset": "Vault",
+    "severity": "high",
+    "finding": "User enumeration по ответам recovery",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 918/922 (200),930/934 (404)",
+    "status": "candidate_offline",
+    "external_mitigation": "Одинаковый публичный status/body при 200/404, без изменения отправки уведомлений",
+    "live_acceptance": "Существующий и отсутствующий identifier дают одинаковые status/body; доставка настоящего reset сохранена; timing channel отдельно"
+  },
+  {
+    "id": "V08",
+    "asset": "Vault",
+    "severity": "critical",
+    "finding": "Подмена targetUsername в сбросе пароля",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1888/1892: success with target override; normal flow 1924/1928",
+    "status": "candidate_offline",
+    "external_mitigation": "Запрет targetUsername/targetUserId; привязку владельца определяет token",
+    "live_acceptance": "Нормальный reset по токену работает; смена чужого пользователя при том же token не проходит"
+  },
+  {
+    "id": "V09",
+    "asset": "Vault",
+    "severity": "critical",
+    "finding": "Публичный outbox отдаёт reset-токены",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1878/1880: unauthenticated /api/lab/outbox",
+    "status": "unresolved_checker_contract",
+    "external_mitigation": "Нужна внешняя изоляция уведомлений по доверенной личности; грубый запрет ломает записанный normal recovery control",
+    "live_acceptance": "Без авторизации чужие уведомления недоступны; легитимный пользователь может получить свой reset предусмотренным способом"
+  },
+  {
+    "id": "V10",
+    "asset": "Vault",
+    "severity": "low",
+    "finding": "OpenAPI раскрывает API и опасные поля",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 870/872 /v3/api-docs",
+    "status": "candidate_offline",
+    "external_mitigation": "web/policy.py: deny /v3/api-docs, /v3/api-docs/*, /swagger-ui*, любой /actuator кроме /actuator/health",
+    "live_acceptance": "/actuator/health и /api/health отвечают200 для мониторинга; /v3/api-docs и /actuator/env отвечают403"
+  },
+  {
+    "id": "V11",
+    "asset": "Vault",
+    "severity": "high",
+    "finding": "SQL injection: защита только наблюдаемого паттерна",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap: /api/accounts/1/transactions includes 403 responses; WAF CSV",
+    "status": "existing_waf_requires_regression",
+    "external_mitigation": "Сохранить semantic SQLi, проверить encoded variants и обычные запросы",
+    "live_acceptance": "Вредный поиск заблокирован, история и поиск легитимного текста работают"
+  },
+  {
+    "id": "M01",
+    "asset": "Market",
+    "severity": "critical",
+    "finding": "/config раскрывает jwt_secret/api_secret/db_dsn",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap: GET /config response keys independently inspected; values excluded",
+    "status": "candidate_response_filter",
+    "external_mitigation": "Удалять конфиденциальные поля из публичного JSON-ответа; секреты не копируются в пакет",
+    "live_acceptance": "Публичная конфигурация/frontend продолжают работать; ключей нет; ранее известный ключ остаётся риском"
+  },
+  {
+    "id": "M02",
+    "asset": "Market",
+    "severity": "critical",
+    "finding": "is_admin=true при регистрации даёт admin-доступ",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1573/1597,1605/1607",
+    "status": "candidate_offline",
+    "external_mitigation": "Allowlist полей регистрации, запрет административной роли/флага/balance",
+    "live_acceptance": "Обычная регистрация buyer/seller работает, новый пользователь не становится администратором"
+  },
+  {
+    "id": "M03",
+    "asset": "Market",
+    "severity": "critical",
+    "finding": "JWT alg:none принят admin endpoint",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1638/1640: unsigned token accepted",
+    "status": "candidate_specific_vector_only",
+    "external_mitigation": "Разрешён HS256 с непустой подписью; криптографическая проверка и доверенная авторизация ещё нужны",
+    "live_acceptance": "Настоящие токены работают; none отклонён; forged signed claims и уже утёкший JWT key проверяются отдельно"
+  },
+  {
+    "id": "M04",
+    "asset": "Market",
+    "severity": "critical",
+    "finding": "X-Forwarded-Host=admin.market.local обходит auth",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1658/1660, no authentication",
+    "status": "candidate_header_normalization",
+    "external_mitigation": "Снимать клиентские forwarded headers и задавать фиксированный публичный Host",
+    "live_acceptance": "Обычный сайт работает; spoofed Host/X-Forwarded-Host не даёт admin без реальной роли"
+  },
+  {
+    "id": "M05",
+    "asset": "Market",
+    "severity": "high",
+    "finding": "Чужой профиль доступен через IDOR",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1475/1477: /api/users/101/profile server flag marker",
+    "status": "unresolved_identity_binding",
+    "external_mitigation": "Доверенная server-side личность и ownership на gateway; не доверять uid из непроверенного JWT",
+    "live_acceptance": "Свой профиль доступен; чужой — по роли, а не произвольному URL id"
+  },
+  {
+    "id": "M06",
+    "asset": "Market",
+    "severity": "high",
+    "finding": "Чужие выплаты продавца доступны через IDOR",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1518/1520: /api/sellers/102/payout marker",
+    "status": "unresolved_identity_binding",
+    "external_mitigation": "Проверка принадлежности sellerId к подтверждённой сервером сессии",
+    "live_acceptance": "Свои выплаты доступны, чужие недоступны; легитимный admin отдельно"
+  },
+  {
+    "id": "M07",
+    "asset": "Market",
+    "severity": "critical",
+    "finding": "Callback увеличивает кошелёк без доказанной оплаты",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1722/1768; corresponding wallet_topup event in docker_market-app.log",
+    "status": "unresolved_payment_contract",
+    "external_mitigation": "Внешняя проверка подписи провайдера, суммы, order/user binding и уникальности события",
+    "live_acceptance": "Настоящая оплата работает; неподписанный/чужой/replayed callback не меняет баланс"
+  },
+  {
+    "id": "M08",
+    "asset": "Market",
+    "severity": "high",
+    "finding": "Account export раскрывает служебные данные",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1685/1687: account export includes marker after forgot flow",
+    "status": "unresolved_identity_and_response_contract",
+    "external_mitigation": "Сверить JSON export с нужными полями, убрать токены и внутренние значения при сохранении своей выгрузки",
+    "live_acceptance": "Своя выгрузка доступна; recovery-token/чужие/служебные поля отсутствуют"
+  },
+  {
+    "id": "M09",
+    "asset": "Market",
+    "severity": "high",
+    "finding": "CRLF injection в email чека",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1004/1008; normal no-CRLF control 1021",
+    "status": "candidate_offline",
+    "external_mitigation": "Запрет CR/LF/NUL в email и subject на /api/orders/*/receipt",
+    "live_acceptance": "Обычный чек отправляется; новые mail headers/получатели не добавляются из поля email"
+  },
+  {
+    "id": "M10",
+    "asset": "Market",
+    "severity": "high",
+    "finding": "Небезопасный CORS",
+    "evidence": "presentation_agent_handoff/01_BRIEF/FACTS_AND_CLAIMS_REGISTER.md; response headers in protected capture",
+    "status": "candidate_response_filter",
+    "external_mitigation": "ACAO/credentials только согласованным точным Origin; пустой allowlist не даёт cross-origin чтение",
+    "live_acceptance": "Same-origin UI работает; evil Origin не читает credentialed response; необходимые внешние frontends явно заданы"
+  },
+  {
+    "id": "M11",
+    "asset": "Market",
+    "severity": "critical",
+    "finding": "SQLi каталога",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap: catalog search includes early 200 and later 403; docker_market-app.log:12037",
+    "status": "existing_waf_requires_regression",
+    "external_mitigation": "Сохранить WAF SQLi; не считать все 200/403 одинаковой стадией защиты",
+    "live_acceptance": "Malicious variants blocked + ordinary catalog search works"
+  },
+  {
+    "id": "M12",
+    "asset": "Market",
+    "severity": "high",
+    "finding": "Traversal/LFI через тему магазина",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap: /api/sellers/3/storefront early 200 and later 403; docker_market-app.log:12039",
+    "status": "existing_waf_requires_regression",
+    "external_mitigation": "WAF inclusion + filename/profile restrictions after legitimate themes inventory",
+    "live_acceptance": "Обычные темы работают; выход за каталог исключён"
+  },
+  {
+    "id": "M13",
+    "asset": "Market",
+    "severity": "critical",
+    "finding": "Command injection в media convert",
+    "evidence": "logs/hackathon_logs/docker_market-app.log:12051; protected capture includes 200/403 stages",
+    "status": "existing_waf_requires_regression",
+    "external_mitigation": "Allowlist форматов конвертации вместо общего shell blacklist, после сверки supported formats",
+    "live_acceptance": "Обычная конвертация работает; format не запускает дополнительную команду"
+  },
+  {
+    "id": "M14",
+    "asset": "Market",
+    "severity": "high",
+    "finding": "XXE в supplier XML import",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap frames 1137/1141, expanded field",
+    "status": "existing_waf_requires_encoded_xml_check",
+    "external_mitigation": "Внешний parser/profile без DTD/entities; проверить UTF-16 и другие кодировки",
+    "live_acceptance": "Обычный импорт работает; локальные файлы/внешние entities не подставляются"
+  },
+  {
+    "id": "M15",
+    "asset": "Market",
+    "severity": "high",
+    "finding": "SSRF avatar/catalog import",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap /api/users/2/avatar and /api/catalog/import; normal/attack paired requests",
+    "status": "unresolved_egress_and_url_contract",
+    "external_mitigation": "Внешний allowlist партнёров плюс запрет внутренних адресов и проверка redirect/DNS на egress",
+    "live_acceptance": "Разрешённая картинка/каталог загружаются; metadata/internal/redirect-chain недоступны"
+  },
+  {
+    "id": "M16",
+    "asset": "Market",
+    "severity": "medium",
+    "finding": "Stored XSS в reviews.html",
+    "evidence": "logs/hackathon_logs/docker_market-app.log:12044-12050; protected capture POST reviews/GET reviews.html",
+    "status": "stored_and_rendered_browser_execution_not_verified",
+    "external_mitigation": "Сохранить WAF; проверить безопасное кодирование на внешнем response filter/CSP с реальным UI",
+    "live_acceptance": "Обычные отзывы видны, вставленный script не исполняется; браузерная проверка обязательна"
+  },
+  {
+    "id": "N01",
+    "asset": "Nether",
+    "severity": "critical",
+    "finding": "Upload -> shared RW volume -> PHP execution",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap: POST /api/upload 201 then GET /uploads/shell_*.phtml 200; Docker shared mounts",
+    "status": "candidate_offline",
+    "external_mitigation": "Allowlist имён/расширений upload + запрет выполнения script paths на обоих HTTP маршрутах",
+    "live_acceptance": "Обычная загрузка и скачивание media работают; phtml/php/htaccess и pathinfo обходы не выполняются"
+  },
+  {
+    "id": "N02",
+    "asset": "Nether",
+    "severity": "high",
+    "finding": "config.backup доступен через защищённый сайт",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/attack_traffic.pcap: GET /config.backup 200",
+    "status": "candidate_offline",
+    "external_mitigation": "Внешний запрет точного служебного пути и скрытых .env/.git",
+    "live_acceptance": "Обычная статика/заявки доступны; конфигурация закрыта"
+  },
+  {
+    "id": "N03",
+    "asset": "Nether",
+    "severity": "high",
+    "finding": "Stored XSS в комментариях",
+    "evidence": "logs/hackathon_logs/docker_nethercorp-website-vulnerable-1.log:1473-1474; protected capture comment POST/HTML GET",
+    "status": "stored_rendering_confirmed_execution_not_verified",
+    "external_mitigation": "Сохранить WAF; проверить CSP/response escaping на реальном сайте",
+    "live_acceptance": "Обычная отправка заявки/комментария и frontend resources работают"
+  },
+  {
+    "id": "N04",
+    "asset": "Nether FTP",
+    "severity": "high",
+    "finding": "Anonymous FTP/download наблюдались",
+    "evidence": "logs/hackathon_logs/docker_nethercorp-ftp-vulnerable-1.log; backup FTP logs",
+    "status": "unresolved_ftp_contract",
+    "external_mitigation": "Внешний FTP-aware proxy/ACL: контроль anonymous и разрешённых путей с сохранением passive ports",
+    "live_acceptance": "Штатный FTP и data ports работают; запрещённые файлы недоступны; без block-all"
+  },
+  {
+    "id": "N05",
+    "asset": "Nether SSH",
+    "severity": "review",
+    "finding": "Успешные password SSH-сессии",
+    "evidence": "logs/hackathon_logs/docker_nethercorp-ssh-vulnerable-1.log",
+    "status": "sessions_confirmed_not_bruteforce_proof",
+    "external_mitigation": "Уточнить разрешённые учётки/сценарии; точечные внешние меры с сохранением легитимного SSH",
+    "live_acceptance": "Нельзя считать любой успешный SSH взломом или блокировать общий IP checker"
+  },
+  {
+    "id": "O01",
+    "asset": "OffLocker",
+    "severity": "critical",
+    "finding": "SQL injection проходит текущий check()",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/offlocker_traffic.pcap frame59; exact legacy validator comparison in legacy_comparison.json",
+    "status": "candidate_offline",
+    "external_mitigation": "Allowlist tracking-query symbols",
+    "live_acceptance": "Нормальный tracking search работает; исходный injection отклонён"
+  },
+  {
+    "id": "O02",
+    "asset": "OffLocker",
+    "severity": "critical",
+    "finding": "Инъекция в подпись tid11 проходит текущий check()",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/offlocker_traffic.pcap frame256; corresponding response111 status0/exitCode0; legacy comparison",
+    "status": "candidate_offline",
+    "external_mitigation": "Профиль обычного текста подписи",
+    "live_acceptance": "Нормальная подпись и выдача работают; shell syntax блокируется"
+  },
+  {
+    "id": "O03",
+    "asset": "OffLocker",
+    "severity": "critical",
+    "finding": "SSRF через approved partner /redirect",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/offlocker_traffic.pcap frames5747/5770; internal employee text; baseline check allows",
+    "status": "candidate_offline",
+    "external_mitigation": "Полный allowlist http://CHILONZOR-01[:80]/manifest.xml без query/fragment",
+    "live_acceptance": "/manifest.xml (len84) работает; /redirect (len80) не достигает backend"
+  },
+  {
+    "id": "O04",
+    "asset": "OffLocker",
+    "severity": "critical",
+    "finding": "Формат токена заменяет проверку доступа к ячейке",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/offlocker_traffic.pcap frames2682/2696: malformed synthetic token, lockerState=OPEN; original check token regexp",
+    "status": "candidate_offline_requires_real_ownership",
+    "external_mitigation": "Hex token + перед locker operation доверенный MyParcels lookup; deny foreign locker",
+    "live_acceptance": "Свой locker для customer/courier открывается/закрывается, чужой и поддельный token не проходят; статусы/повторные соединения проверяются"
+  },
+  {
+    "id": "O05",
+    "asset": "OffLocker",
+    "severity": "high",
+    "finding": "XXE blacklist проверяет сырые bytes, возможен UTF-16 обход",
+    "evidence": "backup home/offlocker_gw.py:40; source review + candidate synthetic encoding regression",
+    "status": "candidate_offline_synthetic",
+    "external_mitigation": "UTF-8 manifest profile, no DTD/entities/namespaces; original XXE signatures retained",
+    "live_acceptance": "Обычный XML импорт работает; UTF-16 DTD/entities blocked"
+  },
+  {
+    "id": "O06",
+    "asset": "OffLocker",
+    "severity": "high",
+    "finding": "diagnostics разрешает произвольные команды без metacharacters",
+    "evidence": "backup home/offlocker_gw.py:41; guide p21; control PCAP frame629",
+    "status": "candidate_offline",
+    "external_mitigation": "Только пустая команда и точный наблюдаемый control echo UNDER; limit1336 retained",
+    "live_acceptance": "Документированная диагностика и echo UNDER control работают; произвольная команда отклонена"
+  },
+  {
+    "id": "O07",
+    "asset": "OffLocker",
+    "severity": "high",
+    "finding": "Короткий PIN/подбор: в протоколе нет внешней политики auth",
+    "evidence": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/offlocker_traffic.pcap login candidate attempts and success; guide defines legitimate six-digit PIN",
+    "status": "candidate_offline_partial",
+    "external_mitigation": "Числовой PIN неверной длины отвечает локальным байт-в-байт ответом сервера (status3 Invalid credentials); подбор шестизначных PIN пейсится по адресу источника, без блокировки и global IP deny",
+    "live_acceptance": "Легитимный шестизначный PIN логинится за <1с даже при атаке; неверные PIN не ускоряют перебор; проверка настоящего PIN на стенде"
+  },
+  {
+    "id": "O08",
+    "asset": "OffLocker",
+    "severity": "medium",
+    "finding": "Незавершённые TCP кадры могут удерживать соединения",
+    "evidence": "backup home/offlocker_gw.py:47-95: no I/O deadlines or connection cap",
+    "status": "candidate_offline",
+    "external_mitigation": "Deadlines, bounded connections, guaranteed socket cleanup",
+    "live_acceptance": "Разбитые/склеенные кадры и постоянные сеансы работают; partial frame не висит бесконечно"
+  },
+  {
+    "id": "A01",
+    "asset": "AgroPlant",
+    "severity": "high",
+    "finding": "Недокументированные coils77/78: служебные команды в атакующих фазах",
+    "evidence": "Late attack_traffic.pcap:78 frame15253 observed reset;77 frame15454 followed by zero latch then later flood. agro/scenarios.json; role77 unknown.",
+    "status": "unknown_service_semantics_not_counted_as_vulnerability",
+    "external_mitigation": "Allowlist документированных адресов как общий контроль; не считать блокировку77 доказательством предотвращения аварий",
+    "live_acceptance": "Установить роль служебных команд без подавления oracle; штатные HMI/maintenance/reset операции сохранены"
+  },
+  {
+    "id": "A02",
+    "asset": "AgroPlant",
+    "severity": "high",
+    "finding": "FC16 пересекает schedule98/99 -> calibration100",
+    "evidence": "Late attack_traffic.pcap: FC16 HR98=[1,2,0] frame18889; flood IR70=1 response19497 to request19492; four waves. See AGP05 in agro/scenarios.json (write frame authoritative there).",
+    "status": "candidate_offline",
+    "external_mitigation": "agro/modbus_gw.py: весь диапазон записи проверяется по allowlist, batch через границу 98/99->100 отклоняется для FC16 и FC23",
+    "live_acceptance": "Эталонные normal+maintenance проходят; смешанный batch отклонён; отдельная калибровка разрешена"
+  },
+  {
+    "id": "A03",
+    "asset": "AgroPlant",
+    "severity": "high",
+    "finding": "Burst тысяч повторных FC06",
+    "evidence": "AGP07:2452 consecutive FC06 HR0=600 in first wave; control-degradation IR74=1 request35569/response35574; repeated four waves, counts exclude NAT copy.",
+    "status": "candidate_offline",
+    "external_mitigation": "agro/modbus_gw.py: token bucket на сессию, лимит одинаковых значений и лимит изменений в окне; избыток отвечает Modbus exception без потери телеметрии",
+    "live_acceptance": "Телеметрия/TICK_SEQUENCE/управление сохраняются под нагрузкой; без общего IP ban"
+  },
+  {
+    "id": "A04",
+    "asset": "AgroPlant",
+    "severity": "critical",
+    "finding": "Опасные сочетания технологических команд остаются",
+    "evidence": "AGP01..04,06,08..10: four waves; nonzero IR70..75 across all six incident categories, with before/after telemetry and request/response frames in agro/scenarios.json.",
+    "status": "candidate_offline",
+    "external_mitigation": "agro/modbus_gw.py: документированные диапазоны HR0-HR12/HR100-HR102, взаимоблокировка водяного тракта по свежему FC01, лимит дозы и импульсов за цикл, запрет HR101 под работающим насосом",
+    "live_acceptance": "Fresh readback and prospective atomic water-path policy; cumulative dose, process envelope, calibration and full normal+maintenance tests remain required. No10/10 or SLA claim offline."
+  },
+  {
+    "id": "I01",
+    "asset": "Infrastructure",
+    "severity": "high",
+    "finding": "Suricata-логи содержат allowed, без blocked",
+    "evidence": "logs/hackathon_logs/suricata/eve.json: 2403 alerts, all action=allowed; screen197 AF_PACKET",
+    "status": "confirmed_detection_not_blocking",
+    "external_mitigation": "Для AD/выбранного прямого актива проверить NFQUEUE routing, -q listener, counters; не дублировать inline50xx и gateway60xx",
+    "live_acceptance": "Suricata -T; matching counter increments; actual prohibited operation blocked; normal protocols work"
+  },
+  {
+    "id": "I02",
+    "asset": "Infrastructure",
+    "severity": "high",
+    "finding": "Backup не является полным восстанавливаемым образом",
+    "evidence": "backup_1024_1952: Docker inspect/logs, home gateway, DB dumps; no images/rootfs/volumes/app sources/firewall snapshots",
+    "status": "confirmed_coverage_gap",
+    "external_mitigation": "Собрать readonly deployment inventory, актуальные external configs и image identities при доступе",
+    "live_acceptance": "После пересоздания контейнеров проверить IP/ports/routes/service ownership заново"
+  },
+  {
+    "id": "I03",
+    "asset": "Infrastructure",
+    "severity": "high",
+    "finding": "DB application role имеет SUPERUSER и BYPASSRLS",
+    "evidence": "backup db/sovereign-vault-db-1.sql:17, values not copied",
+    "status": "out_of_scope_immutable_app_configuration",
+    "external_mitigation": "Фиксируется как blast-radius risk; не менять app/db config вопреки правилам; внешняя изоляция DB network",
+    "live_acceptance": "Сервисы продолжают работать; DB не доступна из непредусмотренного периметра"
+  },
+  {
+    "id": "I04",
+    "asset": "Infrastructure",
+    "severity": "high",
+    "finding": "Samba privileged + host network; management9443 public binding",
+    "evidence": "backup docker/ctf-samba-dc.inspect.json:47,75,78; safeline-mgt inspect:294-299",
+    "status": "configuration_risk_reachability_unproven",
+    "external_mitigation": "Внешняя изоляция management plane, сохранить штатные AD порты; не переписывать app configuration",
+    "live_acceptance": "9443 доступен согласованному админу; реальная внешняя доступность проверена, AD SLA сохранён"
+  },
+  {
+    "id": "I05",
+    "asset": "Infrastructure",
+    "severity": "review",
+    "finding": "Published origins5001-5006 не доказывают bypass WAF",
+    "evidence": "Docker inspect port bindings; firewall/NAT configs absent",
+    "status": "hypothesis_requires_route_test",
+    "external_mitigation": "Не закрывать исходные50xx вслепую: это исходные уязвимые активы по условиям; сначала проверить правила оценки и маршрут",
+    "live_acceptance": "Для каждого актива один разрешённый режим; checker идёт через согласованный60xx или inline50xx"
+  },
+  {
+    "id": "M17",
+    "asset": "Market",
+    "severity": "high_review",
+    "finding": "Корзина: quantity/price требуют проверки бизнес-логики",
+    "evidence": "доп инфа.md: hints for zero/negative/oversized quantities; logs/hackathon_logs/cap_1451.pcap frames227/271,3056850/3057029,3080639/3080644 contain positive qty and client unit_price; no malicious quantity sample found in these captures",
+    "status": "documented_hint_not_confirmed_exploit",
+    "external_mitigation": "Нужна внешняя валидация qty>0, целочисленность, границы stock/стоимости и доверенная серверная цена; текущий кандидат не объявляет корзину закрытой",
+    "live_acceptance": "Нормальные cart/checkout/pay сохранены; zero/negative/oversized qty и price tampering проверены с контролем total/stock/balance; не считать HTTP201 доказательством использования поддельной цены"
+  }
+]

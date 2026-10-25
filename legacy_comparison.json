@@ -1,0 +1,23 @@
+[
+  {
+    "frame": 59,
+    "scenario": "search injection",
+    "legacy": "allow",
+    "candidate": "deny",
+    "reason": "tracking_query"
+  },
+  {
+    "frame": 256,
+    "scenario": "signature command injection",
+    "legacy": "allow",
+    "candidate": "deny",
+    "reason": "signature"
+  },
+  {
+    "frame": 5747,
+    "scenario": "partner redirect SSRF",
+    "legacy": "allow",
+    "candidate": "deny",
+    "reason": "manifest_url"
+  }
+]

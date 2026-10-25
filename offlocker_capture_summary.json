@@ -1,0 +1,62 @@
+[
+  {
+    "capture": "logs/attack_logs_extractedSTAND_HOME/attack_logs/offlocker_traffic.pcap",
+    "bytes": 737199,
+    "sha256": "822388f14f6daf4f01b331c6b028d4b8cd784544d6b566698b5aa46ba37a4876",
+    "decoded_sbe_frames": 743,
+    "templates": {
+      "1": 143,
+      "101": 143,
+      "2": 48,
+      "102": 48,
+      "6": 29,
+      "106": 23,
+      "15": 13,
+      "115": 13,
+      "11": 26,
+      "111": 26,
+      "7": 27,
+      "107": 23,
+      "12": 26,
+      "112": 23,
+      "4": 25,
+      "104": 23,
+      "8": 28,
+      "108": 26,
+      "19": 14,
+      "119": 14,
+      "20": 2
+    },
+    "note": "No token, PIN, request body or private response content exported."
+  },
+  {
+    "capture": "hackathon_backup_1024/extracted/backup_1024_1952/backup_1024_1952/home/attack_logs/offlocker_traffic.pcap",
+    "bytes": 936420,
+    "sha256": "403ab7b24b1510050eaaaa81a7891c11d47b965a08ca542ae1403e46ec7f6b61",
+    "decoded_sbe_frames": 918,
+    "templates": {
+      "1": 176,
+      "101": 176,
+      "2": 66,
+      "102": 66,
+      "6": 38,
+      "106": 26,
+      "15": 16,
+      "115": 16,
+      "11": 32,
+      "111": 32,
+      "7": 34,
+      "107": 26,
+      "12": 32,
+      "112": 26,
+      "4": 30,
+      "104": 26,
+      "8": 36,
+      "108": 32,
+      "19": 14,
+      "119": 14,
+      "20": 4
+    },
+    "note": "No token, PIN, request body or private response content exported."
+  }
+]
