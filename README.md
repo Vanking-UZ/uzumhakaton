@@ -3,15 +3,17 @@
 Набор шлюзов и политик, которыми команда **Vanking** закрывала пять намеренно уязвимых сервисов на защитном треке
 CyberSecurity Uzum Hackathon (24–25 октября 2026), не меняя код самих приложений.
 
-**Итог раунда 2 — 1-е место: 38 баллов, SLA 98 %, закрыто 32 из 52 пунктов.**
+**Итог раунда 2 — 1-е место: 38 баллов, SLA 98 %, закрыто 33 из 52 пунктов.**
 
-![Итоговая таблица раунда 2](docs/img/scoreboard_round2_first_place.jpg)
+![Таблица раунда 2, первые пять команд](docs/img/scoreboard_round2_top5.jpg)
+
+*Таблица перерисована по фото экрана организаторов: закрытые пункты по сервисам у первых пяти команд.*
 
 > **In English.** External defence for five intentionally vulnerable training services (a bank with AD, a marketplace,
 > a corporate portal, a parcel-locker network and an agricultural plant controller) built by team Vanking for the defensive
 > track of the CyberSecurity Uzum Hackathon, 24–25 Oct 2026. Application code could not be changed, and every rule was
 > scored both on attacks stopped and on legitimate clients kept working. Round 2 result: 1st place, 38 points, SLA 98%,
-> 32 of 52 items closed. Protocol-aware allowlists: a mitmproxy policy behind SafeLine for the web services, an SBE gateway
+> 33 of 52 items closed. Protocol-aware allowlists: a mitmproxy policy behind SafeLine for the web services, an SBE gateway
 > for the lockers, a Modbus/TCP gateway for the plant. Russian is the working language of this repository.
 
 Разбор кейса: [dmitriy.cv/ru/work/uzum-hackathon](https://dmitriy.cv/ru/work/uzum-hackathon/) ·
@@ -36,8 +38,8 @@ CyberSecurity Uzum Hackathon (24–25 октября 2026), не меняя ко
 | Market | 5 / 15 | `web/` — политика за SafeLine |
 | Nether Corp | 3 / 5 | `web/` — политика за SafeLine |
 | OffLocker | 6 / 8 | `offlocker/` — SBE-шлюз |
-| AgroPlant | 8 / 10 | `agro/` — Modbus/TCP-шлюз |
-| **Итого** | **32 / 52** | 38 баллов, SLA 98 % |
+| AgroPlant | 9 / 10 | `agro/` — Modbus/TCP-шлюз |
+| **Итого** | **33 / 52** | 38 баллов, SLA 98 % |
 
 Самый слабый результат — Market. Почему и что осталось открытым, см. [Ограничения](#ограничения).
 
@@ -140,7 +142,7 @@ python3 sla_smoke.py --config sla_config.json --mode origin --assets vault,marke
 | `offline_evidence.*`, `legacy_comparison.json`, `large_pcap_sweep.json`, `market_business_evidence.json`, `offlocker_capture_summary.json` | Сводки по результатам replay и разбора захватов, обезличены |
 | `BUILD_SUMMARY_RU.md` | Что вошло в финальную сборку и какие 12 дефектов в ней исправлены, с регресс-тестами |
 | `SOURCES_TAKEN.md`, `FILE_HASHES.sha256` | Происхождение и хэши файлов пакета |
-| `docs/img/` | Итоговая таблица раунда 2 |
+| `docs/img/` | Таблица раунда 2, перерисованная по фото экрана организаторов |
 
 Инструменты из `audit_tools/` читают захваты трафика стенда (`.pcap`). Сами захваты в репозиторий не входят, поэтому без
 них replay не запустится; его результаты лежат в файлах сводок.
@@ -174,9 +176,8 @@ python3 sla_smoke.py --config sla_config.json --mode origin --assets vault,marke
 доказательство, внешняя мера и статус. `evidence_count.json` выделяет из них консервативное подмножество с прямо
 зафиксированным результатом на стороне сервера.
 
-Число подтверждённых сценариев в этом подмножестве и число закрытых пунктов в таблице организаторов совпадают — оба
-равны 32, — но это **разные величины**: первое считает сценарии атак, найденные в захватах, второе — пункты
-проверяющей системы. Соответствия один к одному между ними нет, и `evidence_count.json` это прямо оговаривает.
+Число подтверждённых сценариев в этом подмножестве (32) близко к числу закрытых пунктов в таблице организаторов (33),
+но это **разные величины**: первое считает сценарии атак, найденные в захватах, второе — пункты проверяющей системы. Соответствия один к одному между ними нет, и `evidence_count.json` это прямо оговаривает.
 
 ## Ограничения
 
